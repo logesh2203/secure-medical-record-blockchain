@@ -69,23 +69,25 @@ This system ensures:
 ```bash
 git clone https://github.com/logesh2203/secure-medical-record-blockchain.git
 cd secure-medical-record-blockchain
+
 #2️⃣ Backend setup
 cd backend
 npm install
 npm run dev
+
 #3️⃣ Frontend setup
 cd frontend
 npm install
 npm start
+
 #4️⃣ Blockchain setup
-
 Start Ganache, then:
-
 truffle migrate --reset
+
 #5️⃣ IPFS (Optional)
 ipfs daemon
-#🌐 Environment Variables
 
+#🌐 Environment Variables
 Create .env inside backend:
 
 PORT=5000
@@ -94,6 +96,7 @@ JWT_SECRET=your_secret_key
 GANACHE_RPC_URL=http://127.0.0.1:7545
 MEDICAL_RECORD_CONTRACT_ADDRESS=your_contract_address
 FILE_ENCRYPTION_KEY=your_secret_key
+
 #👥 Team Members
 LOGESH K
 KAMALESH S
@@ -104,6 +107,7 @@ AES Encryption for files
 JWT Authentication
 Blockchain-based access verification
 Hospital-level permission control
+
 #📌 Future Improvements
 Cloud storage (AWS / Firebase)
 Multi-hospital network
