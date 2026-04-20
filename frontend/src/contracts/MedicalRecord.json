@@ -1,0 +1,43 @@
+{
+  "contractName": "MedicalRecord",
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "address", "name": "patient", "type": "address" },
+        { "internalType": "string", "name": "hospital", "type": "string" }
+      ],
+      "name": "checkAccess",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "address", "name": "patient", "type": "address" }],
+      "name": "getFiles",
+      "outputs": [{ "internalType": "string[]", "name": "", "type": "string[]" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "string", "name": "hospital", "type": "string" }],
+      "name": "grantAccess",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "string", "name": "hospital", "type": "string" }],
+      "name": "revokeAccess",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [{ "internalType": "string", "name": "cid", "type": "string" }],
+      "name": "uploadFile",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}

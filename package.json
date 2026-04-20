@@ -1,0 +1,20 @@
+{
+  "name": "secure-medical-record-system",
+  "version": "1.0.0",
+  "description": "Root blockchain tooling for secure medical record project",
+  "main": "truffle-config.js",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network development",
+    "deploy": "truffle migrate --reset --network development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}

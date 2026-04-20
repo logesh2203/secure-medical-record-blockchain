@@ -1,0 +1,274 @@
+:root {
+  color-scheme: light;
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --danger: #dc2626;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #0f172a;
+  color: #fff;
+  padding: 0.85rem 1rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.25);
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user-pill {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.page-center {
+  min-height: calc(100vh - 120px);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.auth-card {
+  width: min(520px, 100%);
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.field span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: #fff;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button.secondary {
+  background: #475569;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.inline-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.dashboard {
+  display: grid;
+  gap: 1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  padding: 0.65rem;
+  font-size: 0.95rem;
+}
+
+.mono {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  word-break: break-all;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+}
+
+.error-text {
+  color: var(--danger);
+  margin: 0;
+}
+
+.success-text {
+  color: #15803d;
+  margin: 0;
+}
+
+.result-block {
+  background: #f8fafc;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.auth-stack {
+  width: min(560px, 100%);
+  display: grid;
+  gap: 1rem;
+}
+
+.banner {
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border: 1px solid var(--border);
+}
+
+.banner-ok {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
+
+.banner-warn {
+  background: #fff7ed;
+  border-color: #fed7aa;
+  color: #9a3412;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.checkbox-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-field input {
+  width: auto;
+}
+
+.field-readonly {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f8fafc;
+  word-break: break-all;
+}
