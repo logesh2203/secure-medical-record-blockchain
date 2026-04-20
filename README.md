@@ -108,7 +108,7 @@ JWT Authentication
 Blockchain-based access verification
 Hospital-level permission control
 
-#📌 Future Improvements
+##📌 Future Improvements
 Cloud storage (AWS / Firebase)
 Multi-hospital network
 AI-based diagnosis integration
